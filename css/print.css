@@ -1,0 +1,398 @@
+/*start of general settings*/
+/*set the background color to white and font weight to normal for better printing*/
+*{
+    background-color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*consistent font family with general.css*/
+    font-weight: normal;
+}
+html,
+body {
+    width: 100%;
+    margin: 0;
+}
+/*hide the images*/
+/* img{
+    display: none;
+} */
+h1, h2, h3{
+    text-align: center;
+}
+/*set full-width=100% for slideshows*/
+.full-width {
+    width: 100%;
+    height: auto;
+}
+
+
+/*hide the navigating bar*/
+.navigating_bar{
+    display: none;
+}
+
+/*hide the back to top button*/
+.topBtn{
+    display: none;
+}
+
+/*set the properties of back to normal button on pages other than index page (homepage)*/
+.btnSwitchToNormal {
+    position: fixed;
+    right: 30px;
+    z-index: 99; /* Make sure it does not overlap */
+    font-size: 13px; 
+    font-weight: bold;
+    cursor:pointer;
+}
+/*set the properties of back to normal button on index page*/
+#btnSwitchToNormalHP{
+    position: fixed;
+    right: 30px;
+    z-index: 99; /* Make sure it does not overlap */
+    font-size: 13px; 
+    font-weight: bold;
+    cursor:pointer;
+}
+/*set the properties of slideshow for About Me and Original Recipe sections*/
+.slideshow-container {
+    width: 35%;
+    height: 35%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+} 
+/*switch page dots*/
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+/*hover effect of the dots: change color*/  
+.active, .dot:hover {
+    background-color: #717171;
+}  
+/*fading animation*/
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+} 
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/*end of general settings*/
+
+/*start of settings for index section (home page)*/
+/*set side-by-side display of mission statement and goal list*/
+.float_container_index{
+    display:flex;
+    flex-wrap:wrap;
+}
+/*set the properties of mission statement and goal list*/
+.float_container_index .float_child_index{
+    height:25%;
+    width:33%;
+    margin-bottom:20px;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+}
+/*settings for the social buttons*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+/* Facebook */
+.fa-facebook {
+    background: black;
+    color: white;
+    
+}
+/* Instagram */
+.fa-instagram {
+    background: black;
+    color: white;
+}
+#social_tip{
+    text-align: center;
+}
+/*center the icons*/
+/*reference: https://stackoverflow.com/questions/8641251/how-do-i-center-list-items-inside-a-ul-element*/
+.social_icons{
+    list-style-type:none;
+    display:flex;
+    justify-content: center;
+}
+.social_icons li {
+    display: inline-block;
+    height: 100px;
+    margin-right: 25px;
+}
+
+/*end of settings for index section (home page)*/
+
+/*start of settings for about me section*/
+.about_me_tip{
+    text-align: center;
+}
+/*properties of slideshow*/
+.slideshow-container {
+    width: 30%;
+    height: 30%;
+    position: relative;
+    margin: auto;
+}  
+/*hide the slideshow switch buttons */
+/* .prev{
+    display: none;
+}
+.next{
+    display: none;
+} */
+/*end of settings for about me section*/
+
+/*start of settings for site map section*/
+/*setting side-by-side display of different divisions*/
+.float_container_sitemap{
+    display:flex;
+    flex-wrap:wrap;
+}
+/*setting each division's properties-height, width and margin*/
+.float_container_sitemap .float_child_sitemap{
+    height:25%;
+    width:25%;
+    margin-bottom:20px;   
+}
+/*properties of hyperlinks in site map page: remove underlines and bullets*/
+.float_container_sitemap li{
+    list-style-type:none;
+}
+.float_container_sitemap a{
+    text-decoration: none;
+    color:black;
+}
+/* .float_container_sitemap li{
+    list-style-type:none;
+} */
+/*end of settings for site map section*/
+
+/*start of settings for source log section*/
+/*set source log table's caption property-font, color, padding*/
+.table_class caption{
+    font-style: italic;
+    color: black;
+    font-size: 25px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+/*set source log table property-width, border, border spacing, margin and center the text inside*/
+.table_class{
+    width: 80%;
+    border: solid 3px black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 10px;
+}
+/*set source log table's hyperlink background color and remove underline*/
+.table_class a{
+    background-color: inherit;
+    text-decoration: none;
+}
+/*end of settings for source log section*/
+
+/*start of settings for feedback section*/
+.email_form h3{
+    text-align: left;
+}
+/*end of settings for feedback section*/
+
+/*start of settings for image map section*/
+/*set the properties of the image used in the image map section-display, margin*/
+.image_map_picture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*set the properties of the tips section*/
+.imageMapInstruction{
+    margin-top: 40px;
+    text-align: center;
+}
+/*end of settings for image map section*/
+
+/*start of settings for photo gallery section*/
+/*set the properties of the filter button*/
+/*center the button*/
+.filterButtonPG{
+    text-align: center;
+}
+/*set other properties and change mouse to pointer for better guidance*/
+.filterButtonPG button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color:black;
+    border: none;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+/*set the properties of the pictures-height, width, float left*/
+.picture-pg{
+    height: 120px; /*resize (smaller) for printing*/
+    width: 120px;
+    float: left;
+    /* background-size: cover; */
+}
+/*set the properties of the general layouts of Photo Gallery: side-by-side image*/
+.filterableElementsPG{
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+}
+/*reference:https://www.w3schools.com/css/css_image_gallery.asp*/
+/*settings of By Me section*/
+.elementByMe{
+    border: 3px solid black;
+    float: left;
+    width: 25%; 
+    height: 30%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+}
+/*center the properties of the description texts*/
+/*settings of Dine Out section*/
+.elementDineOut{
+    border: 3px solid black;
+    float: left;
+    width: 25%; 
+    height: 30%;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+}
+
+/*set the properties of the description texts*/
+.elementDineOut p{
+    text-align:center;
+    font-size: 15px;
+}
+/*remove the restaurant links as links in printed version cannot be clicked*/
+.elementDineOut a{
+    display:none;
+}
+/*filter function*/
+.hidden{
+    display: none;
+}
+/*printing reminder*/
+#printing_reminder{
+    text-align: center;
+}
+/*end of settings for photo gallery section*/
+
+/*start of settings for about my site section*/
+/*setting printer-friendly display of different divisions*/
+.float_container_reflection{
+    margin-top: 30px;
+}
+/*setting each division's properties-height, width and margin*/
+.float_child_reflection{
+    height:25%; 
+    width:80%;
+    margin-bottom:20px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    border: 3px black solid;   
+}
+/*end of settings for about my site section*/
+
+/*start of settings for original recipe section*/
+/*center the tip*/
+.original_tip{
+    text-align: center;
+}
+/*end of settings for original recipe section*/
+
+/*start of the settings for Inspiration page*/
+/*center the tip*/
+.insp_tip{
+    text-align: center;
+}
+/*layout of different blocks in the social feeds div*/
+.social_feeds_fb{
+    width: 100%;
+    margin: 20px auto; /* center grid*/
+    max-width: 1200px; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.social_feeds_yt{
+    margin-top:20px;
+    width: 100%;
+    margin: 20px auto; /* center grid*/
+    max-width: 1200px; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+/*set the properties of the describing text*/
+.sf_divider{
+    text-align: center;
+    font-style: italic;
+}
+/*end of the settings for Inspiration page*/
+
+/*specific print settings*/
+@media print {
+    /*hide the back to normal button when printing, but keep it visible and usable on the pages other than the index page*/
+    .btnSwitchToNormal {
+        display: none !important; 
+    }
+    /*hide the back to normal button when printing, but keep it visible and usable on the index page*/
+    #btnSwitchToNormalHP {
+        display: none !important; 
+    }
+    /*hide the placeholder of feedback form when printing, but keep it visible on the page*/
+    .email_form input::placeholder{
+        color: transparent !important;
+    }
+    .email_form textarea::placeholder{
+        color: transparent !important;
+    }
+    /*hide the fileter buttons in photo gallery section when printing, but keep it visible and usable on the page*/
+    .filterButtonPG{
+        display: none !important;
+    }
+    /*hide the printing reminder in photo gallery section when printing, but keep it visible on the page*/
+    #printing_reminder{
+        display: none !important; 
+    }
+    /*hide the switching dots of slideshow when printing, but keep it visible and usable on the page*/
+    .dot{
+        display: none !important; 
+    }
+    /*hide the social buttons when printing, but keep it visible and usable on the page*/
+    .social{
+        display: none! important;
+    }
+    /*hide the youtube video feeds when printing, but keep it visible on the page*/
+    .social_feeds_yt{
+        display: none! important;
+    }
+}
+

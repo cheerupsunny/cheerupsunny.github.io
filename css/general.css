@@ -1,0 +1,710 @@
+/*start of general settings for the whole website*/
+/*set the background color and font for each page*/
+*{
+    background-color:bisque;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*set the <body>'s display portion for each page*/
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+/*set h1's font size, weight, color, position for each page*/
+h1{
+    color:white;
+    font-weight:bold;
+    font-size:65px;
+    text-align: center;
+    /* padding-bottom: 10px;
+    padding-top: 30px; */
+}
+/*set h2's font size, color for each page*/
+h2{
+    color:grey;
+    font-size:40px;
+}
+/*set h3's font size, color for each page*/
+h3{
+    color:grey;
+    font-size:25px;
+}
+/*set h4's font size, color for each page*/
+h4{
+    color:grey;
+    font-size:20px;
+}
+/*set p's font size, line space, color for each page*/
+p{
+    color: grey;
+    font-size:25px;
+    line-height: 1.5;
+}
+/*set hyperlinks' display color*/
+a { color: inherit; } 
+/*set full-width=100% for slideshows*/
+.full-width {
+    width: 100%;
+    height: auto;
+}
+/*set partial-width for embedded pdf*/
+.partial-width{
+    width: 80%;
+    height: 600px;
+}
+/*start of settings for back to top button*/
+/*reference: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp*/
+.topBtn{
+    /* display: none;  Hidden by default */
+    position: fixed;
+    bottom: 50px; /* Place the button at the bottom of the page */
+    right: 50px; /* Place the button 50px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; 
+    outline: none; 
+    background-color: burlywood;
+    color: white; 
+    cursor: pointer; 
+    padding: 25px; 
+    border-radius: 50%; /*set shape as circle*/
+    font-size: 18px; 
+    font-weight: bold;
+}
+/*hover effect: change size to 1.2 times bigger*/
+.topBtn:hover{
+    transform: scale(1.2);
+}
+/*end of settings for back to top button*/
+/*start of settings for a sticky nivagating bar*/
+/*format the navigating bar generally*/
+.navigating_bar{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;  
+    overflow: hidden;
+    margin-bottom: 30px; /*setting distance between navigating bar and switch css buttons*/
+}
+/* format the unordered list so that it appears directly below the title of the page and below the edge of the colour background */
+.navigating_bar ul {
+    z-index: 99; /*avoid being covered when scrolling*/
+    list-style-type: none;
+    background-color: burlywood;
+    padding: 0px;
+    margin: auto;
+    top:0; /*sticky navigating bar*/
+    position:fixed; /*sticky navigating bar*/
+    width:100%;
+  }
+/* format the list items so that they display across the page instead of in a vertical list */
+.navigating_bar li {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    }    
+/* format the link items so that they are grey, spaced apart, and do not have underlines */
+.navigating_bar a {
+    text-decoration: none;
+    /* background-color: burlywood; */
+    color:grey;
+    padding-left:5px;
+    padding-right:5px;
+}
+.navigating_bar.fixed-nav{
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+/*end of settings for nivagating bar*/
+/*start of settings for the buttons to switch between different css files*/
+/*switch to normal button on pages other than the index page (homepage)*/
+.btnSwitchToNormal {
+    display: none;
+}
+/*switch to normal button on the index page (homepage)*/
+#btnSwitchToNormalHP{
+    display:none;
+}
+
+/*switch to printer-friendly css button*/
+/*pages other than the index page (homepage)*/
+.btnSwitchToPrint{
+    position: fixed;
+    right: 30px;
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; 
+    outline: none; 
+    background-color: lightgrey;
+    color: white; 
+    cursor: pointer; 
+    padding: 10px; /*set the size of background*/
+    font-size: 13px; 
+    font-weight: bold;
+    cursor:pointer;
+}
+/*the index page (homepage)*/
+#btnSwitchToPrintHP{
+    position: fixed;
+    right: 30px;
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; 
+    outline: none; 
+    background-color: lightgrey;
+    color: white; 
+    cursor: pointer; 
+    padding: 10px; /*set the size of background*/
+    font-size: 13px; 
+    font-weight: bold;
+    cursor:pointer;
+}
+/*end of settings for the buttons to switch between different css files*/
+/*end of general settings for the whole website*/
+
+
+/*start of the settings for sitemap page*/
+/*setting side-by-side display of different divisions*/
+.float_container_sitemap{
+    display:flex;
+    flex-wrap:wrap;
+}
+/*setting each division's properties-height, width and margin*/
+.float_container_sitemap .float_child_sitemap{
+    height:25%;
+    width:25%;
+    margin-bottom:20px;   
+}
+/*properties of hyperlinks in site map page: remove underlines and bullets*/
+.float_container_sitemap a{
+    text-decoration: none;
+    font-size: 20px;
+    color:burlywood;
+    font-weight:bold;
+    /* text-align: center; */
+}
+.float_container_sitemap li{
+    list-style-type:none;
+}
+/*end of the settings for sitemap page*/
+
+/*start of the settings for source log page*/
+/*set source log table property-width, border, border spacing, margin and center the text inside*/
+.table_class{
+    width: 80%;
+    border: solid 5px burlywood;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 10px;
+}
+/*change the text color and background color of source log table's header*/
+.table_class tr:first-child>td{
+    background-color: burlywood;
+    color: white;
+    font-size: 30px;
+}
+/*change the background color of source log table's even row for better presentation*/
+.table_class tr:nth-child(even)>td{
+    background-color: lightgoldenrodyellow;
+}
+/*set source log table's caption property-font, color, padding*/
+.table_class caption{
+    font-style: italic;
+    color: grey;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+/*set source log table's hyperlink background color and remove underline*/
+.table_class a{
+    background-color: inherit;
+    text-decoration: none;
+}
+/*highlight the table row when we move the mouse over it*/
+.table_class tr:hover>td{
+    background-color:peachpuff;
+}
+/*set the properties of table contents-font size, color*/
+.table_class td{
+    font-size: 28px;
+    color: grey;
+}
+/*display a horizontal scroll bar if the window screen is too narrow to display the whole table*/
+.table_class td.menu{
+    overflow-x: auto;
+}
+/*end of the settings for source log page*/
+
+/*start of the settings for feedback page*/
+/*set the feedback form's width, background color, and center its location*/
+.email_form fieldset{
+    /* outline-style: solid;
+    outline-color: lightblue;
+    outline-width: 2px; 
+     border-radius: 10px;*/
+    /* background-color: lightgrey; */
+    width: 80%;
+    background-color:peachpuff;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.email_form div{
+    width: 80%;
+    background-color:peachpuff;
+    margin-left: auto;
+    margin-right: auto;
+}
+.email_form h3{
+    background-color:peachpuff;
+}
+/*make the submit and reset label bold*/
+.submit_reset_label{
+    font-weight: bold;
+    background-color: peachpuff;
+}
+/*set bold labels*/
+.email_form label{
+    /* font-weight: bold; */
+    font-size: 22px;
+    color: grey;
+    background-color: peachpuff;
+}
+/*set consistent size for all the text input areas*/
+.email_form input[type=text]{
+    width:80%;
+    height: 30px;
+    border: solid 2px grey;
+}
+.email_form textarea{
+    width:80%;
+    border: solid 2px grey;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*set spaces in between the input areas*/
+.email_form input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*set form hints' text size*/
+.email_form input::placeholder{
+    font-size: 16px;
+}
+.email_form textarea::placeholder{
+    font-size: 16px;
+}
+/*set submit button properties*/
+.email_form input[type=submit]{
+    background-color: lightsalmon;
+    /* border: none; */
+    color:white;
+    cursor:pointer;
+    font-size:20px;
+    font-weight:bold;
+    border-color:grey;
+}
+/*hover effect: change color*/
+.email_form input[type=submit]:hover{
+    background-color: lightblue;
+}
+
+/*set clear button properties*/
+.email_form input[type=reset]{
+    background-color: burlywood;
+    /* border:none; */
+    color:white;
+    cursor:pointer;
+    font-size:20px;
+    font-weight:bold;
+    border-color:grey;
+}
+/*hover effect: change color*/
+.email_form input[type=reset]:hover{
+    background-color: lightblue;
+}
+/*end of the settings for feedback page*/
+
+/*start of the settings for aboutMe page*/
+/*center the tip about this section*/
+.about_me_tip{
+    text-align: center;
+}
+/*start of the settings for slideshow*/
+/* set properties for slideshow container-width, height, position and margin*/
+.slideshow-container {
+    width: 40%;
+    height: 40%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}  
+/*set properties for next and previous buttons*/
+/* .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%; 
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+} */
+/*position the "next button" to the right*/
+/* .next {
+    right: 0; 
+    border-radius: 3px 0 0 3px;
+} */
+/*hover effect of the previous and next buttons: change color*/
+/* .prev:hover, .next:hover {
+    background-color: #717171;
+}   */
+/*set properties of the dot at the bottom*/
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+/*hover effect of the dots: change color*/  
+.active, .dot:hover {
+    background-color: #717171;
+}  
+/*fading animation*/
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+} 
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/*end of the settings for slideshow*/
+/* below is the css code for About Me page in Assignment part 1, which is no longer in use for part 2*/
+/*set locations of imgs in aboutMe page*/
+/* #intro img{
+    float: left;
+    margin-right: 20px;
+}
+#passion img{
+    float: left;
+    margin-right: 20px;
+}
+#clear_aboutMe{clear:left} */
+/*set automatic newline for paragraphs*/
+/* #intro_para{
+    word-wrap: break-word;
+    width:1500px;
+} */
+/*end of the settings for aboutMe page*/
+
+/*start of the settings for index page*/
+/*settings for homepage's welcoming image and text*/
+.homepage_welcoming_img{
+    height: 50%;
+    background-image: url("../images/index_welcoming.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+}
+.homepage_welcoming_txt{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: grey;
+    font-style: italic;
+}
+/*set side-by-side display of mission statement and goal list*/
+.float_container_index{
+    display:flex;
+    flex-wrap:wrap;
+}
+/*set the properties of mission statement and goal list*/
+.float_container_index .float_child_index{
+    height:25%;
+    width:33%;
+    margin-bottom:20px;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+}
+/*set the properties of the title 'Mission Statement' and 'Goal List'*/
+.float_container_index .float_child_index h2{
+    color: whitesmoke;
+    background-color: burlywood;
+    text-align: center;
+}
+/*set the properties of the content below 'Goal List' section*/
+.float_container_index .float_child_index li{
+    color:grey;
+    font-size: 25px;
+    padding: 40px;
+}
+/*settings for the social buttons*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    
+}
+/* Instagram */
+.fa-instagram {
+    background: #55ACEE;
+    color: white;
+}
+#social_tip{
+    text-align: center;
+}
+/*center the icons*/
+/*reference: https://stackoverflow.com/questions/8641251/how-do-i-center-list-items-inside-a-ul-element*/
+.social_icons{
+    list-style-type:none;
+    display:flex;
+    justify-content: center;
+}
+.social_icons li {
+    display: inline-block;
+    height: 100px;
+    margin-right: 25px;
+}
+/*end of the settings for index page*/
+
+/*start of the settings for image map page*/
+/*set the properties of the image used in the image map section-display, margin*/
+.image_map_picture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*set the properties of the tips section*/
+.imageMapInstruction{
+    margin-top: 40px;
+    text-align: center;
+}
+/*end of the settings for image map page*/
+
+/*start of the settings for photo gallery page*/
+/*set the properties of the sub title*/
+.photoGallerySubTitle{
+    text-align: center;
+}
+/*set the properties of the filter button*/
+/*center the button*/
+.filterButtonPG{
+    text-align: center;
+}
+/*set other properties and change mouse to pointer for better guidance*/
+.filterButtonPG button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color:burlywood;
+    border: none;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+/*hover effect: change size to 1.2 times bigger*/
+.filterButtonPG button:hover{
+    transform: scale(1.2);
+}
+/*set the properties of the pictures-height, width, float left*/
+.picture-pg{
+    height: 200px;
+    width: 200px;
+    float: left;
+    /* background-size: cover; */
+}
+/*set the properties of the general layouts of Photo Gallery: side-by-side image*/
+.filterableElementsPG{
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+}
+/*reference:https://www.w3schools.com/css/css_image_gallery.asp*/
+/*settings of By Me section*/
+.elementByMe{
+    border: 3px solid lightgray;
+    float: left;
+    width: 25%; 
+    height: 30%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+}
+/*hover effect: change size to 1.2 times bigger*/
+.elementByMe:hover {
+    transform: scale(1.2);
+}
+/*center the properties of the description texts*/
+.elementByMe h3{
+    text-align:center;
+    /* background-color: whitesmoke; */
+}
+/*settings of Dine Out section*/
+.elementDineOut{
+    border: 3px solid lightgray;
+    float: left;
+    width: 25%; 
+    height: 30%;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+}
+/*hover effect: change size to 1.2 times bigger*/
+.elementDineOut:hover {
+    transform: scale(1.2);
+}
+/*set the properties of the description texts*/
+.elementDineOut p{
+    text-align:center;
+    font-size: 20px;
+    /* background-color: whitesmoke; */
+}
+.elementDineOut a{
+    font-size: 18px;
+    background-color: whitesmoke;
+    font-style: italic;
+}
+/*filter function*/
+.hidden{
+    display: none;
+}
+/*hide the printing reminder*/
+#printing_reminder{
+    display:none;
+}
+/*end of the settings for photo gallery page*/
+
+/*start of the settings for About My Site page*/
+/*center the tip*/
+.about_my_site_tip{
+    text-align: center;
+}
+/*setting side-by-side display of different divisions*/
+.float_container_reflection{
+    margin-top: 30px;
+    /* display:flex;
+    flex-wrap:wrap; */
+}
+/*setting each division's properties-height, width and margin*/
+.float_child_reflection{
+    height:25%;
+    /* width:25%; */
+    width:80%;
+    margin-bottom:20px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    border: 3px lightgray solid;  
+    margin-bottom: 50px; 
+}
+/*setting the background color of the paragraphs*/
+.reflection_para{
+    background-color: peachpuff;
+}
+/*set the color, font style of each reflection title*/
+.float_child_reflection h2{
+    color: burlywood;
+    font-style: italic;
+    
+}
+/*end of the settings for About My Site page*/
+
+/*start of the settings for Original Recipe page*/
+.original_tip{
+    text-align: center;
+}
+/*put the titles on top of the image*/
+.origin_title{
+    text-align: center;
+    font-size: 22px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255,218,185,0.5);
+    
+}
+/*description paragraph's font size and background color*/
+.origin_para{
+    background-color: peachpuff;
+    font-size: 22px;
+}
+/*end of the settings for Original Recipe page*/
+
+/*start of the settings for Inspiration page*/
+/*center the tip*/
+.insp_tip{
+    text-align: center;
+}
+/*layout of different blocks in the social feeds div*/
+.social_feeds_fb{
+    width: 100%;
+    margin: 20px auto; /* center grid*/
+    max-width: 1200px; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.social_feeds_yt{
+    margin-top:20px;
+    width: 100%;
+    margin: 20px auto; /* center grid*/
+    max-width: 1200px; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+/*set the youtube video's border as none*/
+iframe {
+    border: none;
+}
+/*set the properties of the describing text*/
+.sf_divider{
+    text-align: center;
+    background-color:whitesmoke;
+}
+/*end of the settings for Inspiration page*/
+
+/*start of the settings for Validation page*/
+/*center the tip for this page*/
+#val_tip{
+    text-align: center;
+}
+/*center and set the background color for dividing descriptions*/
+.val_divider{
+    background-color: white;
+    text-align: center;
+}
+/*center the embedded pdf files*/
+#html_validation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#css_validation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*end of the settings for Validation page*/
