@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--start of the linked CSS file to this HTML file-->
+        <!--general-->
+        <link rel="stylesheet" type="text/css" href="../css/general.css"> 
+        <!--printer friendly-->
+        <link rel="stylesheet" type="text/css" href="../css/print.css" media="print"> 
+        <!--end of the linked CSS file to this HTML file--> 
+        <meta charset="utf-8">
+        <title>Image Map</title>
+    </head>
+    <body>
+        <!--start of the navigating bar-->
+        <div class="navigating_bar">
+            <ul>
+                <li><a href="../index.html">Homepage</a></li>
+                <li><a href="aboutMe.html">About Me</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+                <li><a href="sourceLog.html">Source Log</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="imageMap.html">Image Map</a></li>
+                <li><a href="photoGallery.html">Photo Gallery</a></li>
+                <li><a href="aboutMySite.html">About My Site</a></li>
+                <li><a href="validation.html">Validation</a></li>
+                <li><a href="originalRecipe.html">Original Recipe</a></li>
+                <li><a href="inspirations.html">Inspirations</a></li>
+            </ul>
+        </div>
+        <!--end of the navigating bar-->
+            <!--start of switch style buttons-->
+            <div class="switch_css_btn">
+                <button class="btnSwitchToPrint"  onclick="switchToPrintStyles()">Printer-Friendly Version</button>
+                <button class="btnSwitchToNormal" onclick="switchToNormalStyles()">Back to Normal Version</button>  
+            </div>
+        <!--end of switch style buttons-->
+        <h1>Image Map</h1>
+        <!--start of the imageMap-->
+        <!--help tool: https://www.image-map.net/-->
+        <div class='imageMap'>
+            <img src="../images/image_map.JPG" alt="world cuisine" usemap="#image_map" class="image_map_picture"
+            width="1121" height="558">
+            <map class="image_map_area" name="image_map">
+                <area shape="rect" coords="44,17,279,137"
+                    alt="Spanish Cuisine" title="Spanish Cuisine" 
+                    href="https://en.wikipedia.org/wiki/Spanish_cuisine">
+                <area shape="rect" coords="22,147,186,278" 
+                    alt="German Cuisine" title="German Cuisine" 
+                    href="https://en.wikipedia.org/wiki/German_cuisine">
+                <area shape="rect" coords="43,310,207,524"
+                    alt="Chinese Cuisine" title="Chinese Cuisine" 
+                    href="https://en.wikipedia.org/wiki/Chinese_cuisine">
+                <area shape="rect" coords="99,235,423,285"
+                    alt="Japanese Cuisine" title="Japanese Cuisine" 
+                    href="https://en.wikipedia.org/wiki/Japanese_cuisine">
+                <area shape="rect" coords="216,243,405,395"
+                    alt="American Cuisine" title="American Cuisine" 
+                    href="https://en.wikipedia.org/wiki/American_cuisine">
+                <area shape="rect" coords="227,399,425,539" 
+                    alt="Indian Cuisine" title="Indian Cuisine" 
+                    href="https://en.wikipedia.org/wiki/Indian_cuisine">
+                <area shape="rect" coords="488,82,720,184" 
+                    alt="Russian Cuisine" title="Russian Cuisine" 
+                    href="https://en.wikipedia.org/wiki/Russian_cuisine">
+                <area shape="rect" coords="445,220,631,354" 
+                    alt="Greek Cuisine" title="Greek Cuisine" 
+                    href="https://en.wikipedia.org/wiki/Greek_cuisine">
+                <area shape="rect" coords="443,364,629,531" 
+                    alt="Ukrainian Cuisine" title="Ukrainian Cuisine" 
+                    href="https://en.wikipedia.org/wiki/Ukrainian_cuisine"> 
+                <area shape="rect" coords="785,14,924,172" 
+                    alt="French Cuisine" title="French Cuisine" 
+                    href="https://en.wikipedia.org/wiki/French_cuisine">
+                <area shape="rect" coords="689,193,890,325" 
+                    alt="Georgian Cuisine" title="Georgian Cuisine" 
+                    href="https://en.wikipedia.org/wiki/Georgian_cuisine"> 
+                <area  shape="poly" coords="641,331,725,332,727,358,857,373,854,491,748,492,685,488,638,485"
+                    alt="Italian Cuisine" title="Italian Cuisine" 
+                    href="https://en.wikipedia.org/wiki/Italian_cuisine">  
+                <area shape="rect" coords="954,25,1092,207"
+                    alt="English Cuisine" title="English Cuisine" 
+                    href="https://en.wikipedia.org/wiki/English_cuisine">
+                <area shape="rect" coords="898,224,1073,353" 
+                    alt="Mexican Cuisine" title="Mexican Cuisine" 
+                    href="https://en.wikipedia.org/wiki/Mexican_cuisine">
+                <area shape="rect" coords="867,361,1067,513" 
+                    alt="Thai Cuisine" title="Thai Cuisine" 
+                    href="https://en.wikipedia.org/wiki/Thai_cuisine">
+            </map>
+        </div>
+        <div class="imageMapInstruction">
+            <h2>Tips of this Image Map:</h2>
+            <p>
+                This image shows some famous and representative regional cuisines.
+            </p>
+            <p>
+                Once you hover your mouse over each small drawing of the regional cuisines, the information about its originating country will pop up.
+            </p>
+            <p>
+               If you want to know more detailed information about each regional cuisine, simply click the corresponding drawing, and then you will be directed to the corresponding Wikipedia page!
+            </p>
+        </div>
+        <!--back to top button-->
+        <div class="backToTopBtn">
+            <button onclick="topFunction()" class="topBtn" title="Go to top">Top</button>
+        </div>
+        <!--start of the linked JS file to this HTML file-->
+        <script src="../js/general.js"></script>
+        <!--end of the linked JS file to this HTML file-->
+    </body>
+</html>

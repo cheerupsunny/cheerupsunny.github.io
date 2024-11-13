@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--start of the linked CSS file to this HTML file-->
+        <!--general-->
+        <link rel="stylesheet" type="text/css" href="../css/general.css"> 
+        <!--printer friendly-->
+        <link rel="stylesheet" type="text/css" href="../css/print.css" media="print"> 
+        <!--end of the linked CSS file to this HTML file-->  
+        <meta charset="utf-8">
+        <title>About Me</title>
+    </head>
+    <body>
+        <!--start of the navigating bar-->
+        <div class="navigating_bar">
+            <ul>
+                <li><a href="../index.html">Homepage</a></li>
+                <li><a href="aboutMe.html">About Me</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+                <li><a href="sourceLog.html">Source Log</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="imageMap.html">Image Map</a></li>
+                <li><a href="photoGallery.html">Photo Gallery</a></li>
+                <li><a href="aboutMySite.html">About My Site</a></li>
+                <li><a href="validation.html">Validation</a></li>
+                <li><a href="originalRecipe.html">Original Recipe</a></li>
+                <li><a href="inspirations.html">Inspirations</a></li>
+            </ul>
+        </div>
+        <!--end of the navigating bar-->
+        <!--start of switch style buttons-->
+        <div class="switch_css_btn">
+            <button class="btnSwitchToPrint"  onclick="switchToPrintStyles()">Printer-Friendly Version</button>
+            <button class="btnSwitchToNormal" onclick="switchToNormalStyles()">Back to Normal Version</button>  
+        </div>
+        <!--end of switch style buttons-->
+        <h1>
+            About Me and My Passion
+        </h1>
+        <h3 class="about_me_tip">
+            Get to know me and my passion by exploring some pictures with discriptions below!
+        </h3>
+        <p class="about_me_tip">Tip: click the dots below the pictures to switch pages</p>
+        <!--start of the slideshow section-->
+        <!--reference: https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+        <div class="slideshow-container">
+            <!-- start of the image and description in the slideshow -->
+            <div class="mySlides fade">
+                <img src="../images/Slideshow_about_me/my_photo.jpg" style="width:100%"
+                alt="My photo">
+                <!-- start of the dots to switch between slides -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+                <!-- end of the dots to switch between slides -->
+                <div class="slidingText">
+                    <p class="intro_para">
+                        <b>Name:</b>   Yuwei Wu<br>   
+                        <b>Major:</b> <br>
+                        Master of Computing (Specialisation: Data Science),<br>
+                        <a href="https://www.anu.edu.au/">the Australian National University(ANU)</a><br>
+                        <b>IT Interests:</b>   Data Science; Human-Centred Design<br>
+                        <b>IT Skills:</b>   Python, Java, SQL, HTML, CSS, R(Rattle)<br>
+                        <b>Fun Fact:</b>   I am also doing a part-time job in a milktea shop in Canberra!<br>
+                        <!-- <b>Pet:</b>   Not for now(sad...) but wish to have a golden retriever in the future!<br> -->
+                     </p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../images/Slideshow_about_me/travel_Italy.jpg" style="width:100%"
+                alt="Travel to Italy">
+                <!-- start of the dots to switch between slides -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+                <!-- end of the dots to switch between slides -->
+                <div class="slidingText">
+                    <p class="passion_para">
+                        I love <b>travelling</b> to enjoy beautiful and diverse views.<br>
+                        Here is a picture I took when I was travelling in Italy.    
+                    </p>
+                </div>
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="../images/Slideshow_about_me/me_cooking.jpg" style="width:100%"
+                alt="Me cooking">
+                <!-- start of the dots to switch between slides -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+                <!-- end of the dots to switch between slides -->
+                <div class="slidingText">
+                    <p class="passion_para">
+                        I love <b>cooking</b>, as I feel that making and eating yummy food can relieve my stress.<br>
+                        Here is a selfie of myself when I was cooking.
+                    </p>
+                </div>
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="../images/Slideshow_about_me/playing_piano.jpg" style="width:100%"
+                alt="Me playing the piano">
+                <!-- start of the dots to switch between slides -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+                <!-- end of the dots to switch between slides -->
+                <div class="slidingText">
+                    <p class="passion_para">
+                        I like <b>playing the piano</b>.<br>
+                        Here is a picture taken when I played the piano for North Baptist Church in Canberra.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../images/Slideshow_about_me/passion_cooking_yellow.jpg" style="width:100%"
+                alt="My cooking passion">
+                <!-- start of the dots to switch between slides -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+                <!-- end of the dots to switch between slides -->
+                <div class="slidingText">
+                    <p class="passion_para">
+                        I also have many other hobbies:<br>
+                        I love sports like swimming, jogging and dancing.<br>
+                        I probably like coding as well haha.<br>
+                        On this website, I will focus on introducing my <b>foodie</b> passion!
+                    </p>
+                </div>
+            </div>
+            <!-- end of the image and description in the slideshow -->
+            <!--end of the slideshow section-->
+            <!-- Next and previous buttons
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+        </div>
+  
+        <!--back to top button-->
+        <div class="backToTopBtn">
+            <button onclick="topFunction()" class="topBtn" title="Go to top">Top</button>
+        </div>
+        <!--start of the linked JS file to this HTML file-->
+        <script src="../js/general.js"></script>
+        <!--end of the linked JS file to this HTML file-->
+    </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--start of the linked CSS file to this HTML file-->
+        <!--general-->
+        <link rel="stylesheet" type="text/css" href="../css/general.css"> 
+        <!--printer friendly-->
+        <link rel="stylesheet" type="text/css" href="../css/print.css" media="print"> 
+        <!--end of the linked CSS file to this HTML file--> 
+        <meta charset="utf-8">
+        <title>Original Recipe</title>
+    </head>
+    <body>
+        <!--start of the navigating bar-->
+        <div class="navigating_bar">
+            <ul>
+                <li><a href="../index.html">Homepage</a></li>
+                <li><a href="aboutMe.html">About Me</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+                <li><a href="sourceLog.html">Source Log</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="imageMap.html">Image Map</a></li>
+                <li><a href="photoGallery.html">Photo Gallery</a></li>
+                <li><a href="aboutMySite.html">About My Site</a></li>
+                <li><a href="validation.html">Validation</a></li>
+                <li><a href="originalRecipe.html">Original Recipe</a></li>
+                <li><a href="inspirations.html">Inspirations</a></li>
+            </ul>
+        </div>
+        <!--end of the navigating bar-->
+        <!--start of switch style buttons-->
+        <div class="switch_css_btn">
+            <button class="btnSwitchToPrint"  onclick="switchToPrintStyles()">Printer-Friendly Version</button>
+            <button class="btnSwitchToNormal" onclick="switchToNormalStyles()">Back to Normal Version</button>  
+        </div>
+        <!--end of switch style buttons-->
+        <h1>Original Recipe</h1>
+        <h3 class="original_tip">
+            Explore my secret recipe of Sichuan boiled pork  with me!
+        </h3> 
+        <p class="original_tip">Tip: click the dots below the pictures to switch pages</p>
+        <!--start of the recipe section-->
+        <!--reference: https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+        
+        <div class="slideshow-container">
+            <!-- start of the image and description in the slideshow -->
+            <div class="mySlides fade">
+                <img src="../images/Original_recipe/ingredients.png" class="full-width" alt="ingredients">
+                <!-- start of the dots to switch between slides -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                <!-- end of the dots to switch between slides -->
+                <div class="slidingText">
+                    <p class="origin_title"><b>Ingredients</b> <br></p>
+                    <p class="origin_para">
+                        1. Pork fillet<br>
+                        2. Some veggies such as tofu and mushrooms<br>
+                        3. Spices: Ginger, Chinise five spice, Soy sauce, Cook wine, Potato starch, Spring onion, Garlic, Chilli powder, Sichun pepper powder<br>
+                        4. Spicy hotpot broth       
+                     </p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../images/Original_recipe/preparation.png" class="full-width" alt="preparation steps">
+                <!-- start of the dots to switch between slides -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                <!-- end of the dots to switch between slides -->
+                <div class="slidingText">
+                    <p class="origin_title"><b>Preparation</b> <br></p>
+                    <p class="origin_para">
+                        1. Thinly slice the pork fillet<br>
+                        2. Chop the spring onion and garlic<br>
+                        2. Add ginger, chinese five spice, soy sauce, cook wine, potato starch and part of the chopped spring onion to the sliced pork<br>
+                        3. Mix well and marinate the pork for 20 minutes<br>
+                        4. Put the rest of the chopped spring onion, chopped garlic, chilli powder and Sichuan pepper powder together into a small bowl
+                    </p>
+                </div>
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="../images/Original_recipe/final.png" class="full-width" alt="final steps">
+                <!-- start of the dots to switch between slides -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                <!-- end of the dots to switch between slides -->
+                <div class="slidingText">
+                    <p class="origin_title"><b>Cooking</b> <br></p>
+                    <p class="origin_para">
+                        1. Put the spicy hotpot broth to a pot with boiling water<br>
+                        2. Put the viggies you like in and boil for 5 minites<br>
+                        3. Put the marinated pork in, stir and boil for 1-2 minutes<br>
+                        4. Use another pan to heat up some oil<br>
+                        5. Put the mixture in preparation 4 on top of the contents in step 2 and pour the heated oil in<br>
+                    </p>
+                </div>
+            </div>
+            <!-- end of the image and description in the slideshow -->
+            <!--end of the slideshow section-->
+
+        </div>
+  
+        <!--end of the recipe section-->
+        <!--back to top button-->
+        <div class="backToTopBtn">
+            <button onclick="topFunction()" class="topBtn" title="Go to top">Top</button>
+        </div>
+        <!--start of the linked JS file to this HTML file-->
+        <script src="../js/general.js"></script>
+        <!--end of the linked JS file to this HTML file-->
+    </body>
+</html>

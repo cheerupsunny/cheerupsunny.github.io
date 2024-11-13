@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--start of the linked CSS file to this HTML file-->
+        <!--general-->
+        <link rel="stylesheet" type="text/css" href="../css/general.css"> 
+        <!--printer friendly-->
+        <link rel="stylesheet" type="text/css" href="../css/print.css" media="print"> 
+        <!--end of the linked CSS file to this HTML file--> 
+        <meta charset="utf-8">
+        <title>Photo Gallery</title>
+    </head>
+    <body>
+        <!--start of the navigating bar-->
+        <div class="navigating_bar">
+            <ul>
+                <li><a href="../index.html">Homepage</a></li>
+                <li><a href="aboutMe.html">About Me</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+                <li><a href="sourceLog.html">Source Log</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="imageMap.html">Image Map</a></li>
+                <li><a href="photoGallery.html">Photo Gallery</a></li>
+                <li><a href="aboutMySite.html">About My Site</a></li>
+                <li><a href="validation.html">Validation</a></li>
+                <li><a href="originalRecipe.html">Original Recipe</a></li>
+                <li><a href="inspirations.html">Inspirations</a></li>
+            </ul>
+        </div>
+        <!--start of switch style buttons-->
+        <div class="switch_css_btn">
+            <button class="btnSwitchToPrint"  onclick="switchToPrintStyles()">Printer-Friendly Version</button>
+            <button class="btnSwitchToNormal" onclick="switchToNormalStyles()">Back to Normal Version</button>  
+        </div>
+        <!--end of switch style buttons-->
+        <!--printing reminder-->
+        <div id="printing_reminder">
+            <p>Please print in landscape layout for better visibility</p>
+        </div>
+        <!--printing reminder-->
+        <!--end of the navigating bar-->
+        <h1>Photo Gallery</h1>
+        <h2 class="photoGallerySubTitle">"Let's Explore Some Delicious Food Together!"</h2>
+        <!--control buttons-->
+        <!--reference: https://www.w3schools.com/howto/howto_js_filter_elements.asp-->
+        <div class="filterButtonPG">
+            <button class="btn" data-filter='*' onclick="filterObjects(event)">All</button>
+            <button class="btn" data-filter='elementByMe' onclick="filterObjects(event)">Made By Me</button>
+            <button class="btn" data-filter='elementDineOut' onclick="filterObjects(event)">Dine Out in Canberra</button>
+        </div>
+        <!--start of filterable elements-->
+        <div class="filterableElementsPG">
+            <!--start of By Me section-->
+            <div class="elementByMe">
+                <img class="picture-pg" src="../images/Photo_gallery_by_me/braised_beef_tomato_by_me.png" 
+                    alt="Tomato-based Braised Beef">
+                <h3>Tomato Braised Beef</h3>
+            </div>
+            <div class="elementByMe">
+                <img class="picture-pg" src="../images/Photo_gallery_by_me/braised_pork_rice_by_me.png" 
+                    alt="Braised Pork with Rice">
+                <h3>Braised Pork with Rice</h3>
+            </div>
+            <div class="elementByMe">
+                <img class="picture-pg" src="../images/Photo_gallery_by_me/korean_beef_by_me.png" 
+                    alt="Korean Style Beef with Kimchi and Mushrooms">
+                <h3>Korean Style Beef</h3>
+            </div>
+            <div class="elementByMe">
+                <img class="picture-pg" src="../images/Photo_gallery_by_me/pork_belly_by_me.png" 
+                    alt="Pork Belly with Rice">
+                <h3>Pork Belly with Rice</h3>
+            </div>
+            <div class="elementByMe">
+                <img class="picture-pg" src="../images/Photo_gallery_by_me/pork_ribs_by_me.png" 
+                    alt="Pork Ribs with Potatoes">
+                <h3>Pork Ribs with Potatoes</h3>
+            </div>
+            <div class="elementByMe">
+                <img class="picture-pg" src="../images/Photo_gallery_by_me/Sichuan_boiled_beef_by_me.png" 
+                    alt="Sichuan Boiled Beef">
+                <h3>Sichuan Boiled Beef</h3>
+            </div>
+            <div class="elementByMe">
+                <img class="picture-pg" src="../images/Photo_gallery_by_me/kung_pao_chicken_by_me.png" 
+                    alt="Kung Pao Chicken">
+                <h3>Kung Pao Chicken</h3>
+            </div>
+            <div class="elementByMe">
+                <img class="picture-pg" src="../images/Photo_gallery_by_me/steak_by_me.png" 
+                    alt="Home-made Steak">
+                <h3>Home-made Steak</h3>
+            </div>
+            <div class="elementByMe">
+                <img class="picture-pg" src="../images/Photo_gallery_by_me/sandwich_by_me.png" 
+                    alt="Sandwich">
+                <h3>Sandwich</h3>
+            </div>
+            <!--end of By Me section-->
+            <!--start of Dine Out section-->
+            <div class="elementDineOut">
+                <img class="picture-pg" src="../images/Photo_gallery_dine_out/corella.png" 
+                    alt="Corella">
+                <!-- <div class="description-pg"> -->
+                <h3>Corella</h3>
+                <p>
+                    Aussie Fine Dining<br>
+                    <a href="https://www.corellabar.com.au">Click to View Restaurant Website</a>
+                </p>
+                <!-- </div> -->
+            </div>
+            <div class="elementDineOut">
+                <img class="picture-pg" src="../images/Photo_gallery_dine_out/John's_kitchen.png" 
+                    alt="John's Kitchen">
+                <h4>John's Kitchen</h4>
+                <p>
+                    Sichuan Cuisine<br>
+                    <a href="https://maps.app.goo.gl/bqp2dcmu4fVzabGe7?g_st=ic">Click to View on Google Map</a>
+                </p>
+            </div>
+            <div class="elementDineOut">
+                <img class="picture-pg" src="../images/Photo_gallery_dine_out/lantern_rooms.png" 
+                    alt="Laterne Rooms">
+                <h4>Lanterne Rooms</h4>
+                <p>
+                    Asian Fusion Dining<br>
+                    <a href="https://chairmangroup.com.au/lanterne-rooms/">Click to View Restaurant Website</a>
+                </p>
+            </div>
+            <div class="elementDineOut">
+                <img class="picture-pg" src="../images/Photo_gallery_dine_out/ms_ba_co.png" 
+                    alt="Ms Ba Cô">
+                <h3>Ms Ba Cô</h3>
+                <p>
+                    Vietnamese Food<br>
+                    <a href="https://www.msbaco.com">Click to View Restaurant Website</a>
+                </p>
+            </div>
+            <div class="elementDineOut">
+                <img class="picture-pg" src="../images/Photo_gallery_dine_out/raku.png" 
+                    alt="Raku">
+                <h3>Raku</h3>
+                <p>
+                    Japanese Cuisine<br>
+                    <a href="https://www.rakudining.com.au">Click to View Restaurant Website</a>
+                </p>
+            </div>
+            <div class="elementDineOut">
+                <img class="picture-pg" src="../images/Photo_gallery_dine_out/rebel_rebel.png" 
+                    alt="Rebel Rebel">
+                <h3>Rebel Rebel</h3>
+                <p>
+                    Aussie Fine Dining<br>
+                    <a href="https://rebelrebeldining.com.au">Click to View Restaurant Website</a>
+                </p>
+            </div>
+            <div class="elementDineOut">
+                <img class="picture-pg" src="../images/Photo_gallery_dine_out/Ginseng.png" 
+                    alt="Ginseng">
+                <h3>Ginseng</h3>
+                <p>
+                    Yum Cha<br>
+                    <a href="https://www.hellenicclub.com.au/ginseng">Click to View Restaurant Website</a>
+                </p>
+            </div>
+            <div class="elementDineOut">
+                <img class="picture-pg" src="../images/Photo_gallery_dine_out/Super_emoji.png" 
+                    alt="Super Emoji">
+                <h3>Super Emoji</h3>
+                <p>
+                    Milktea | Dessert<br>
+                    <a href="https://www.superemoji.com.au">Click to View Restaurant Website</a>
+                </p>
+            </div>
+            <div class="elementDineOut">
+                <img class="picture-pg" src="../images/Photo_gallery_dine_out/Kimchi.png" 
+                    alt="Chez Kimchi">
+                <h3>Chez Kimchi</h3>
+                <p>
+                    Korean Cuisine<br>
+                    <a href="https://maps.app.goo.gl/4auabMw39WT5B1qg9?g_st=ic">Click to View on Google Map</a>
+                </p>
+            </div>
+            <!--end of Dine Out section-->
+        </div>
+        <!--end of filterable elements-->
+        <!--back to top button-->
+        <div class="backToTopBtn">
+            <button onclick="topFunction()" class="topBtn" title="Go to top">Top</button>
+        </div>
+        <!--start of the linked JS file to this HTML file-->
+        <script src="../js/general.js"></script>
+        <!--end of the linked JS file to this HTML file-->
+    </body>
+</html>

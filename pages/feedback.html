@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--start of the linked CSS file to this HTML file-->
+        <!--general-->
+        <link rel="stylesheet" type="text/css" href="../css/general.css"> 
+        <!--printer friendly-->
+        <link rel="stylesheet" type="text/css" href="../css/print.css" media="print"> 
+        <!--end of the linked CSS file to this HTML file-->   
+        <meta charset="utf-8">
+        <title>Feedback Form</title>
+    </head>
+    <body>
+        <!--start of the navigating bar-->
+        <div class="navigating_bar">
+            <ul>
+                <li><a href="../index.html">Homepage</a></li>
+                <li><a href="aboutMe.html">About Me</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+                <li><a href="sourceLog.html">Source Log</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="imageMap.html">Image Map</a></li>
+                <li><a href="photoGallery.html">Photo Gallery</a></li>
+                <li><a href="aboutMySite.html">About My Site</a></li>
+                <li><a href="validation.html">Validation</a></li>
+                <li><a href="originalRecipe.html">Original Recipe</a></li>
+                <li><a href="inspirations.html">Inspirations</a></li>
+            </ul>
+        </div>
+        <!--end of the navigating bar-->
+        <!--start of switch style buttons-->
+        <div class="switch_css_btn">
+            <button class="btnSwitchToPrint"  onclick="switchToPrintStyles()">Printer-Friendly Version</button>
+            <button class="btnSwitchToNormal" onclick="switchToNormalStyles()">Back to Normal Version</button>  
+        </div>
+        <!--end of switch style buttons-->
+        <h1>Feedback Form</h1>
+        <!--start of the feedback form-->
+        <form enctype="text/plain"
+        action="mailto:yuwei.woo@icloud.com?subject=Feedback+for+Yuwei's+Website" 
+        method="post" class="email_form">
+            <fieldset>
+                <!--start of personal information section-->
+                <div class="personal_info_fb">
+                    <h3>Personal Information:</h3>
+                     <!--start of the name section-->
+                    <label for="name">1. Your name:</label><br>
+                    <input type="text" id="name" name="name" value="" placeholder="Your name is..."><br>
+                    <!--end of the name section-->
+                    <!--start of the email address section-->
+                    <label for="email">2. Your email address:</label><br>
+                    <input type="text" id="email" name="email" value="" placeholder="Your email is..."><br>
+                    <!--end of the email address section-->
+                    <!--start of the gender choice section-->
+                    <label>3. What is your gender?</label><br>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label>
+                    <input type="radio" id="notToSay" name="gender" value="I prefer not to say">
+                    <label for="notToSay">I prefer not to say</label><br>
+                    <!--end of the gender choice section-->
+                <!--end of personal information section-->
+            </div>
+            <!--start of user experience section-->
+            <div class="website_user_experience_fb">
+                <h3>Website User Experience:</h3>
+                <label>1. Overall, do you like this website?</label><br>
+                <input type="radio" id="NotAtAll" name="overall rating" value="Not like at all">
+                <label for="NotAtAll">Not like at all</label>
+                <input type="radio" id="soSo" name="overall rating" value="Just so so">
+                <label for="soSo">Just so so</label>
+                <input type="radio" id="like_website" name="overall rating" value="I like this website!">
+                <label for="like_website">I like this website!</label>
+                <input type="radio" id="not_to_say" name="overall rating" value="I prefer not to say">
+                <label for="notToSay">I prefer not to say</label><br>
+                <!--end of the overall website rating choice section-->
+                <!--start of the like best section-->
+                <label for="like_best">2. Please tell me what you like most of this website:</label><br>
+                <textarea id="like_best" name="like best" placeholder="Please type your suggestions here..."></textarea><br>
+                <!--end of the like best section-->
+                <!--start of the necessary improvement section-->
+                <label for="necessary_improvement">3. Please tell me what improvement you believe is necessary for this website:</label><br>
+                <textarea id="necessary_improvement" name="necessary improvement" placeholder="Please type your suggestions here..."></textarea><br>
+                <!--end of the necessary improvement section-->
+            </div>
+            <!--end of user experience section-->
+            <!--start of the other feedback section-->
+            <div class="other_feedback_fb">
+                <h3>Other Feedback:</h3>
+                <label for="feedback">Please fill in your other feedback:</label><br>
+                <textarea id="feedback" name="feedback" placeholder="Please type your suggestions here..."></textarea><br>
+            </div>
+            <!--end of the other feedback section-->
+            <div class="submit_or_reset">
+                <!--start of the action (submit or clear) section-->
+                <label class="submit_reset_label">Click to submit:</label><br>
+                <!--send email button-->
+                <input type="submit" value="Send Feedback"> <br>
+                <label class="submit_reset_label">OR clear and refill:</label><br>
+                <!--clear button-->
+                <input type="reset" value="Clear"><br>
+                <!--end of the action (submit or clear) section-->
+            </div>
+        </fieldset>
+        </form>
+        <!--end of the feedback form-->
+        <!--back to top button-->
+        <div class="backToTopBtn">
+            <button onclick="topFunction()" class="topBtn" title="Go to top">Top</button>
+        </div>
+        <!--start of the linked JS file to this HTML file-->
+        <script src="../js/general.js"></script>
+        <!--end of the linked JS file to this HTML file-->
+    </body>
+</html>

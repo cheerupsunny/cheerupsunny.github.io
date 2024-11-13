@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--start of the linked CSS file to this HTML file-->
+        <!--general-->
+        <link rel="stylesheet" type="text/css" href="../css/general.css"> 
+        <!--printer friendly-->
+        <link rel="stylesheet" type="text/css" href="../css/print.css" media="print"> 
+        <!--end of the linked CSS file to this HTML file--> 
+        <meta charset="utf-8">
+        <title>Validation</title>
+    </head>
+    <body>
+        <!--start of the navigating bar-->
+        <div class="navigating_bar">
+            <ul>
+                <li><a href="../index.html">Homepage</a></li>
+                <li><a href="aboutMe.html">About Me</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+                <li><a href="sourceLog.html">Source Log</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="imageMap.html">Image Map</a></li>
+                <li><a href="photoGallery.html">Photo Gallery</a></li>
+                <li><a href="aboutMySite.html">About My Site</a></li>
+                <li><a href="validation.html">Validation</a></li>
+                <li><a href="originalRecipe.html">Original Recipe</a></li>
+                <li><a href="inspirations.html">Inspirations</a></li>
+            </ul>
+        </div>
+        <!--end of the navigating bar-->
+        <!--start of switch style buttons-->
+        <!-- <div class="switch_css_btn">
+            <button class="btnSwitchToPrint"  onclick="switchToPrintStyles()">Printer-Friendly Version</button>
+            <button class="btnSwitchToNormal" onclick="switchToNormalStyles()">Back to Normal Version</button>  
+        </div> -->
+        <!--end of switch style buttons-->
+        <h1>Validation</h1>
+        <h3 id="val_tip">Here are my validation reports for each html and css file</h3>
+        <h3 class="val_divider">HTML</h3>
+        <div id="html_validation">
+            <embed src="../other/html_validation_report.pdf" type="application/pdf" class="partial-width"/>
+        </div>
+        <h3 class="val_divider">CSS</h3>
+        <div id="css_validation">
+            <embed src="../other/css_validation_report.pdf" type="application/pdf" class="partial-width"/>
+        </div>
+        <!--back to top button-->
+        <div class="backToTopBtn">
+            <button onclick="topFunction()" class="topBtn" title="Go to top">Top</button>
+        </div>
+        <!--start of the linked JS file to this HTML file-->
+        <script src="../js/general.js"></script>
+        <!--end of the linked JS file to this HTML file-->
+    </body>
+</html>
